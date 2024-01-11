@@ -1,8 +1,48 @@
 {
   "answerQuastion": [
     {
-      "quastion": "who says meow",
+      "question": "who says meow",
       "answer": "cat"
+    },
+    {
+      "question": "An element with the symbol 'O'",
+      "answer": "Oxygen"
+    },
+    {
+      "question": "A famous scientist known for the theory of relativity",
+      "answer": "Einstein"
+    },
+    {
+      "question": "The capital of Japan",
+      "answer": "Tokyo"
+    },
+    {
+      "question": "The largest mammal in the world",
+      "answer": "Bluewhale"
+    },
+    {
+      "question": "The currency of Germany",
+      "answer": "Euro"
+    },
+    {
+      "question": "A Shakespeare play about tragedy and betrayal",
+      "answer": "Othello"
+    },
+    {
+      "question": "A programming language named after a snake",
+      "answer": "Python"
+    },
+    {
+      "question": "The longest river in the world",
+      "answer": "Nile"
+    },
+    {
+      "question": "A famous painting by Leonardo da Vinci with a mysterious smile",
+      "answer": "MonaLisa"
+    },
+    {
+      "question": "A mythical bird that rises from its ashes",
+      "answer": "Phoenix"
     }
   ],
   "keyboard": [

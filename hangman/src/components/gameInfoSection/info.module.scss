@@ -1,5 +1,14 @@
 $text-dark: #2C4A52;
 
+.main__section_info {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.main__info_span {
+  font-weight: bold;
+}
+
 .main__info_answer {
   color: $text-dark;
   font-size: 60px;
@@ -14,5 +23,6 @@ $text-dark: #2C4A52;
 
 .main__info_guesses {
   color: $text-dark;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
