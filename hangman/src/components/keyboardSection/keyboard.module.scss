@@ -1,0 +1,27 @@
+$buttons-action: #537072;
+$background-body: #F4EBDB;
+
+.main__section_keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__keyboard_key {
+  transition: transform ease .3s;
+  background-color: $buttons-action;
+  color: $background-body;
+
+  width: 2.1em;
+  height: 2.1em;
+
+  border-radius: 5px;
+  border: 0px;
+
+  font-size: 20px;
+  margin: 2px;
+}
+
+.main__keyboard_key:active {
+  transform: translateY(2px);
+}

@@ -6,8 +6,31 @@
     }
   ],
   "keyboard": [
-    {
-      "keyQ": "q"
-    }
+    { "key": "Q", "keyCode": 81, "status": "active" },
+    { "key": "W", "keyCode": 87, "status": "active" },
+    { "key": "E", "keyCode": 69, "status": "active" },
+    { "key": "R", "keyCode": 82, "status": "active" },
+    { "key": "T", "keyCode": 84, "status": "active" },
+    { "key": "Y", "keyCode": 89, "status": "active" },
+    { "key": "U", "keyCode": 85, "status": "active" },
+    { "key": "I", "keyCode": 73, "status": "active" },
+    { "key": "O", "keyCode": 79, "status": "active" },
+    { "key": "P", "keyCode": 80, "status": "active" },
+    { "key": "A", "keyCode": 65, "status": "active" },
+    { "key": "S", "keyCode": 83, "status": "active" },
+    { "key": "D", "keyCode": 68, "status": "active" },
+    { "key": "F", "keyCode": 70, "status": "active" },
+    { "key": "G", "keyCode": 71, "status": "active" },
+    { "key": "H", "keyCode": 72, "status": "active" },
+    { "key": "J", "keyCode": 74, "status": "active" },
+    { "key": "K", "keyCode": 75, "status": "active" },
+    { "key": "L", "keyCode": 76, "status": "active" },
+    { "key": "Z", "keyCode": 90, "status": "active" },
+    { "key": "X", "keyCode": 88, "status": "active" },
+    { "key": "C", "keyCode": 67, "status": "active" },
+    { "key": "V", "keyCode": 86, "status": "active" },
+    { "key": "B", "keyCode": 66, "status": "active" },
+    { "key": "N", "keyCode": 78, "status": "active" },
+    { "key": "M", "keyCode": 77, "status": "active" }
   ]
 }
