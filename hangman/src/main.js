@@ -1,6 +1,6 @@
-import Header from './layout/header';
-import Main from './layout/main';
+import initHeader from './components/header';
+import initMain from './components/main';
 import './style/main.scss';
 
-Header();
-Main();
+initHeader();
+initMain();

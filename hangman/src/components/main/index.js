@@ -1,6 +1,6 @@
 import styles from './main.module.scss';
 
-export default function Main() {
+export default function initMain() {
   const MAIN = document.createElement('main');
   const wrapper = document.createElement('div');
 

@@ -1,6 +1,6 @@
 import styles from './header.module.scss';
 
-export default function Header() {
+export default function initHeader() {
   const HEADER = document.createElement('header');
   const title = document.createElement('h1');
   const wrapper = document.createElement('div');
