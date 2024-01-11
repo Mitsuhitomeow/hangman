@@ -11,7 +11,7 @@ export default function initHeader() {
 
   title.innerText = 'Hagman Game';
 
-  HEADER.className = `${styles.header}`;
-  wrapper.className = `${styles.wrapper}`;
+  HEADER.className = `header`;
+  wrapper.className = `${styles.header__wrapper}`;
   title.className = `${styles.title}`;
 }

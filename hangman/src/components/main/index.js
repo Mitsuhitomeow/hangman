@@ -8,5 +8,5 @@ export default function initMain() {
   MAIN.appendChild(wrapper);
 
   MAIN.className = `main`;
-  wrapper.className = `${styles.wrapper}`;
+  wrapper.className = `${styles.main__wrapper}`;
 }
