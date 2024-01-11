@@ -6,11 +6,16 @@
 }
 
 .title {
-  color: #464969;
+  color: #2C4A52;
 
   text-align: center;
   text-decoration:underline;
 
-  font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.title::after,
+.title::before {
+  content: '-';
 }
