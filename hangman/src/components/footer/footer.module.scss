@@ -1,0 +1,20 @@
+.footer__wrapper {
+  max-width: 1240px;
+  width: 100%;
+
+  padding: 20px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+
+  span {
+    color: #464969;
+
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
