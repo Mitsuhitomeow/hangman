@@ -15,6 +15,7 @@ export default function createQuestion(infoSection) {
   const guessesElement = document.createElement('p');
 
   const boldWord = document.createElement('span');
+  boldWord.textContent = `Hint: `;
 
   boldWord.className = `${styles.main__info_span}`;
   answerElement.className = `${styles.main__info_answer}`;
