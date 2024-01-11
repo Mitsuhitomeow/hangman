@@ -1,0 +1,18 @@
+$text-dark: #2C4A52;
+
+.main__info_answer {
+  color: $text-dark;
+  font-size: 60px;
+  letter-spacing: .5em;
+}
+
+.main__info_question {
+  color: $text-dark;
+  font-size: 30px;
+  letter-spacing: .05em;
+}
+
+.main__info_guesses {
+  color: $text-dark;
+  font-size: 20px;
+}
