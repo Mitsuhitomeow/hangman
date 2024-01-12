@@ -1,12 +1,12 @@
 import {
   randomAnswer,
   hiddenAnswer,
-} from '../gameInfoSection/questionsForEach';
+} from '../components/gameInfoSection/questionsForEach';
+import createModal from '../components/modal';
 
-let count = 6;
-const answerArray = randomAnswer.split('');
-const hiddenAnswerArray = hiddenAnswer.split('');
-console.log(answerArray, hiddenAnswerArray);
+let countGuesses = 6;
+const answerArray = [...randomAnswer];
+const hiddenAnswerArray = [...hiddenAnswer];
 
 export default function initGameFunctionality() {
   const button = document.querySelectorAll(`[class*=main__keyboard_key]`);
@@ -26,11 +26,16 @@ export default function initGameFunctionality() {
           }
         });
       }
+
       if (!answerArray.includes(key.textContent)) {
-        count -= 1;
-        guesses.textContent = `guesses: ${count} / 6`;
-        image.setAttribute('src', `/${count}.svg`);
+        countGuesses -= 1;
+        guesses.textContent = `guesses: ${countGuesses} / 6`;
+        image.setAttribute('src', `/${countGuesses}.svg`);
       }
+
+      return JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)
+        ? createModal('You WIN!', randomAnswer)
+        : countGuesses === 0 && createModal('You Lost!', randomAnswer);
     });
   });
 }
