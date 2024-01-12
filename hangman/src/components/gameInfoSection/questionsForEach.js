@@ -2,7 +2,7 @@ import styles from './info.module.scss';
 import { answerQuastion } from '../../database.json';
 
 const random = Math.floor(Math.random() * answerQuastion.length);
-const randomAnswer = answerQuastion[random].answer;
+const randomAnswer = answerQuastion[random].answer.toUpperCase();
 const hiddenAnswer = randomAnswer
   .split('')
   .map(() => '_')
@@ -31,3 +31,5 @@ export default function createQuestion(infoSection) {
   infoSection.append(guessesElement);
   questionElement.prepend(boldWord);
 }
+
+export { randomAnswer, hiddenAnswer };

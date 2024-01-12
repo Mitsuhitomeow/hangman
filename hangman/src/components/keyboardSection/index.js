@@ -2,9 +2,9 @@ import styles from './keyboard.module.scss';
 import createKey from './keysForEach';
 import { keyboard } from '../../database.json';
 
-const firstRow = keyboard.slice(0, 9);
-const secondRow = keyboard.slice(9, 18);
-const thirdRow = keyboard.slice(18, keyboard.length);
+const firstRow = keyboard.slice(0, 10);
+const secondRow = keyboard.slice(10, 19);
+const thirdRow = keyboard.slice(19, keyboard.length);
 
 export default function initKeyboard() {
   const container = document.querySelector('[class*=main__section_game]');

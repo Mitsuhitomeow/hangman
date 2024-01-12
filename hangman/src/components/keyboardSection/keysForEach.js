@@ -5,6 +5,10 @@ export default function createKey(data, keyboard) {
     const button = document.createElement('button');
     button.textContent = `${key.key}`;
 
+    button.addEventListener('click', () => {
+      button.disabled = true;
+    });
+
     button.className = `${styles.main__keyboard_key}`;
     keyboard.append(button);
   });

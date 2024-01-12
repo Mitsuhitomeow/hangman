@@ -4,7 +4,7 @@ export default function initGallows() {
   const section = document.querySelector('[class*=main__section_gallows]');
   const image = document.createElement('img');
 
-  image.setAttribute('src', './0.svg');
+  image.setAttribute('src', './6.svg');
   image.setAttribute('alt', 'Gallows Image');
 
   image.className = `${styles.main__image_gallows}`;
