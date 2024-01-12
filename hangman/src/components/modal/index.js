@@ -1,3 +1,4 @@
+import initGame from '../../utils/startNewGame';
 import styles from './modal.module.scss';
 
 export default function createModal(isWon, word) {
@@ -29,5 +30,7 @@ export default function createModal(isWon, word) {
 
   BTN_RESTART.addEventListener('click', () => {
     modal.style.display = 'none';
+
+    initGame();
   });
 }

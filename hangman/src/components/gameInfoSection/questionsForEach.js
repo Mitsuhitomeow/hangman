@@ -1,15 +1,20 @@
 import styles from './info.module.scss';
 import { answerQuastion } from '../../database.json';
 
-const random = Math.floor(Math.random() * answerQuastion.length);
-const randomAnswer = answerQuastion[random].answer.toUpperCase();
-const hiddenAnswer = randomAnswer
-  .split('')
-  .map(() => '_')
-  .join('');
-const randomQuestion = answerQuastion[random].question;
+let random;
+let randomAnswer;
+let hiddenAnswer;
+let randomQuestion;
 
 export default function createQuestion(infoSection) {
+  random = Math.floor(Math.random() * answerQuastion.length);
+  randomAnswer = answerQuastion[random].answer.toUpperCase();
+  hiddenAnswer = randomAnswer
+    .split('')
+    .map(() => '_')
+    .join('');
+  randomQuestion = answerQuastion[random].question;
+
   const answerElement = document.createElement('span');
   const questionElement = document.createElement('p');
   const guessesElement = document.createElement('p');

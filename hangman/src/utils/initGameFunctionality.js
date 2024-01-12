@@ -4,17 +4,21 @@ import {
 } from '../components/gameInfoSection/questionsForEach';
 import createModal from '../components/modal';
 
-let countGuesses = 6;
-const answerArray = [...randomAnswer];
-const hiddenAnswerArray = [...hiddenAnswer];
-
 export default function initGameFunctionality() {
+  const answerArray = [...randomAnswer];
+  const hiddenAnswerArray = [...hiddenAnswer];
+  let countGuesses = 6;
+
   const button = document.querySelectorAll(`[class*=main__keyboard_key]`);
   const [guesses, image, answer] = [
     document.querySelector(`[class*=main__info_guesses]`),
     document.querySelector(`[class*=main__image_gallows]`),
     document.querySelector(`[class*=main__info_answer]`),
   ];
+
+  guesses.textContent = `guesses: ${countGuesses} / 6`;
+  image.setAttribute('src', `./6.svg`);
+  answer.textContent = hiddenAnswerArray.join('');
 
   button.forEach((key) => {
     key.addEventListener('click', () => {
@@ -30,12 +34,16 @@ export default function initGameFunctionality() {
       if (!answerArray.includes(key.textContent)) {
         countGuesses -= 1;
         guesses.textContent = `guesses: ${countGuesses} / 6`;
-        image.setAttribute('src', `/${countGuesses}.svg`);
+        image.setAttribute('src', `./${countGuesses}.svg`);
       }
 
-      return JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)
-        ? createModal('You WIN!', randomAnswer)
-        : countGuesses === 0 && createModal('You Lost!', randomAnswer);
+      if (JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)) {
+        createModal('You WIN!', randomAnswer);
+      }
+
+      if (countGuesses === 0) {
+        createModal('You Lost!', randomAnswer);
+      }
     });
   });
 }
