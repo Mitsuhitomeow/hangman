@@ -1,19 +1,22 @@
-.footer__wrapper {
-  max-width: 1240px;
+footer {
 
-  padding: 20px;
-  margin: 0 auto;
+  .footer__wrapper {
+    max-width: 1240px;
 
-  display: flex;
-  justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
 
-  span {
-    color: #2C4A52;
+    display: flex;
+    justify-content: center;
 
-    text-align: center;
+    span {
+      color: #2C4A52;
 
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+
+      font-size: 15px;
+      font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+    }
   }
 }

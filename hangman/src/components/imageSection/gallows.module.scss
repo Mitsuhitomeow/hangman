@@ -1,3 +1,8 @@
 .main__image_gallows {
   width: 300px;
+  margin-bottom: 20px;
+
+  @media screen and (max-width:810px) {
+    width: 40%;
+  }
 }

@@ -3,6 +3,10 @@ $text-dark: #2C4A52;
 .main__section_info {
   text-align: center;
   margin-bottom: 3em;
+
+  @media screen and (max-width:760px) {
+    margin-bottom: 1.5em;
+  }
 }
 
 .main__info_span {
@@ -13,16 +17,28 @@ $text-dark: #2C4A52;
   color: $text-dark;
   font-size: 60px;
   letter-spacing: .5em;
+
+  @media screen and (max-width:580px) {
+    font-size: 40px;
+  }
 }
 
 .main__info_question {
   color: $text-dark;
   font-size: 30px;
   letter-spacing: .05em;
+
+  @media screen and (max-width:580px) {
+    font-size: 20px;
+  }
 }
 
 .main__info_guesses {
   color: $text-dark;
   font-size: 25px;
   font-weight: bold;
+
+  @media screen and (max-width:760px) {
+    margin: 0;
+  }
 }

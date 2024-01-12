@@ -5,10 +5,19 @@
 
   display: flex;
   justify-content: space-evenly;
+
+  @media screen and (max-width:810px) {
+    flex-direction: column;
+  }
 }
 
 .main__section_gallows {
   display: block;
+
+  @media screen and (max-width:810px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main__section_game {
