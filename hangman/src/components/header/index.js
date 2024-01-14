@@ -1,3 +1,4 @@
+import toggleSound from '../../utils/clickSound';
 import styles from './header.module.scss';
 import soundOn from '/sound-on.svg'
 
@@ -19,5 +20,7 @@ export default function initHeader() {
   HEADER.className = `header`;
   wrapper.className = `${styles.header__wrapper}`;
   title.className = `${styles.title}`;
-  img.className = `${styles.header__img_sound}`;
+  img.className = `${styles.header__img_sound} sound`;
+
+  toggleSound()
 }

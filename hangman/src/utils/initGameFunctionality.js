@@ -2,8 +2,8 @@ import {
   randomAnswer,
   hiddenAnswer,
 } from '../components/gameInfoSection/questionsForEach';
-import createModal from '../components/modal';
 import { keyboard } from '../database.json';
+import createModal from '../components/modal';
 import mp3 from '/musickPressKey.mp3';
 
 export default function initGameFunctionality() {
@@ -13,10 +13,11 @@ export default function initGameFunctionality() {
   let countGuesses = 6;
 
   const button = document.querySelectorAll(`[class*=main__keyboard_key]`);
-  const [guesses, image, answer] = [
+  const [guesses, image, answer, sound] = [
     document.querySelector(`[class*=main__info_guesses]`),
     document.querySelector(`[class*=main__image_gallows]`),
     document.querySelector(`[class*=main__info_answer]`),
+    document.querySelector(`[class*=header__img_sound]`),
   ];
 
   guesses.textContent = `guesses: ${countGuesses} / 6`;
@@ -30,7 +31,6 @@ export default function initGameFunctionality() {
     if (!gameInProgress) {
       return;
     }
-
     KEYS.forEach((element) => {
       const key = element;
 
@@ -40,7 +40,10 @@ export default function initGameFunctionality() {
           const click = elem;
           if (key.key === click.textContent) {
             click.disabled = true;
-            audio.play()
+
+            if (sound.classList.contains('sound')) {
+              audio.play()
+            }
           }
           if (key.key === click.textContent && !answerArray.includes(key.key)) {
             countGuesses -= 1;
