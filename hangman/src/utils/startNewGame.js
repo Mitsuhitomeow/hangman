@@ -22,5 +22,5 @@ export default function initGame() {
   initKeyboard();
 
   initGameFunctionality();
-  toggleSound()
+  toggleSound();
 }

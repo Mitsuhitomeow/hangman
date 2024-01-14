@@ -14,6 +14,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "import/no-unresolved": ["error", { "ignore": [".svg$", ".mp3$"] }],
     "import/no-mutable-exports": "off",
     "import/no-cycle": "off",
     "semi": "error"

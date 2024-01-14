@@ -1,5 +1,4 @@
-/* eslint-disable */
-import favicon from '/favicon.svg';
+import favicon from '../../../../../../favicon.svg';
 
 export default function initFavicon() {
   const link = document.createElement('link');

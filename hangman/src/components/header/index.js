@@ -1,5 +1,5 @@
 import styles from './header.module.scss';
-import soundOff from '/sound-off.svg'
+import soundOff from '../../../../../../sound-off.svg';
 
 export default function initHeader() {
   const HEADER = document.createElement('header');
@@ -7,7 +7,7 @@ export default function initHeader() {
   const wrapper = document.createElement('div');
   const img = document.createElement('img');
 
-  img.setAttribute('src', soundOff)
+  img.setAttribute('src', soundOff);
 
   document.body.append(HEADER);
   HEADER.append(wrapper);
