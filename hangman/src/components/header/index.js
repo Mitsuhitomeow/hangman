@@ -1,6 +1,5 @@
-import toggleSound from '../../utils/clickSound';
 import styles from './header.module.scss';
-import soundOn from '/sound-on.svg'
+import soundOff from '/sound-off.svg'
 
 export default function initHeader() {
   const HEADER = document.createElement('header');
@@ -8,7 +7,7 @@ export default function initHeader() {
   const wrapper = document.createElement('div');
   const img = document.createElement('img');
 
-  img.setAttribute('src', soundOn)
+  img.setAttribute('src', soundOff)
 
   document.body.append(HEADER);
   HEADER.append(wrapper);
@@ -20,7 +19,5 @@ export default function initHeader() {
   HEADER.className = `header`;
   wrapper.className = `${styles.header__wrapper}`;
   title.className = `${styles.title}`;
-  img.className = `${styles.header__img_sound} sound`;
-
-  toggleSound()
+  img.className = `${styles.header__img_sound}`;
 }
