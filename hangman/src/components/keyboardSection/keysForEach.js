@@ -1,5 +1,5 @@
 import styles from './keyboard.module.scss';
-import mp3 from '../../../../../../musickPressKey.mp3';
+import mp3 from '/musickPressKey.mp3';
 
 export default function createKey(data, keyboard) {
   data.forEach((key) => {

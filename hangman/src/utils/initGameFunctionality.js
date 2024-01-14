@@ -4,7 +4,7 @@ import {
 } from '../components/gameInfoSection/questionsForEach';
 import { keyboard } from '../database.json';
 import createModal from '../components/modal';
-import mp3 from '../../../../../../musickPressKey.mp3';
+import mp3 from '/musickPressKey.mp3';
 
 export default function initGameFunctionality() {
   const audio = new Audio(mp3);

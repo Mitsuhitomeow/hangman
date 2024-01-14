@@ -1,5 +1,6 @@
 import styles from './header.module.scss';
-import soundOff from '../../../../../../sound-off.svg';
+import soundOff from '/sound-off.svg';
+import toggleSound from '../../utils/clickSound';
 
 export default function initHeader() {
   const HEADER = document.createElement('header');
@@ -20,4 +21,6 @@ export default function initHeader() {
   wrapper.className = `${styles.header__wrapper}`;
   title.className = `${styles.title}`;
   img.className = `${styles.header__img_sound}`;
+
+  toggleSound();
 }

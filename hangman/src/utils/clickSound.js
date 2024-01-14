@@ -1,6 +1,6 @@
-import soundOn from '../../../../../../sound-on.svg';
-import soundOff from '../../../../../../sound-off.svg';
-import backgroundMp3 from '../../../../../../musicBackground.mp3';
+import soundOn from '/sound-on.svg';
+import soundOff from '/sound-off.svg';
+import backgroundMp3 from '/musicBackground.mp3';
 
 const audio = new Audio(backgroundMp3);
 

@@ -15,6 +15,7 @@
   },
   "rules": {
     "import/no-unresolved": ["error", { "ignore": [".svg$", ".mp3$"] }],
+    "import/no-absolute-path": "off",
     "import/no-mutable-exports": "off",
     "import/no-cycle": "off",
     "semi": "error"

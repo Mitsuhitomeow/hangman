@@ -1,5 +1,5 @@
-import winMp3 from '../../../../../../musicFanfar.mp3';
-import lostMp3 from '../../../../../../musicGameOver.mp3';
+import winMp3 from '/musicFanfar.mp3';
+import lostMp3 from '/musicGameOver.mp3';
 
 export default function isWinnerSound(isWon) {
   const img = document.querySelector('[class*=header__img_sound]');
