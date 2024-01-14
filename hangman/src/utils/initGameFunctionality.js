@@ -90,10 +90,12 @@ export default function initGameFunctionality() {
       if (JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)) {
         createModal('You WIN!', randomAnswer);
         countGuesses = 6;
+        gameInProgress = false;
       }
 
       if (countGuesses === 0) {
         createModal('You Lost!', randomAnswer);
+        gameInProgress = false;
       }
     });
   });
