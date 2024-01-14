@@ -5,6 +5,7 @@ import initHeader from '../components/header';
 import initGallows from '../components/imageSection';
 import initKeyboard from '../components/keyboardSection';
 import initMain from '../components/main';
+import toggleSound from './clickSound';
 import initGameFunctionality from './initGameFunctionality';
 
 export default function initGame() {
@@ -21,4 +22,5 @@ export default function initGame() {
   initKeyboard();
 
   initGameFunctionality();
+  toggleSound()
 }
