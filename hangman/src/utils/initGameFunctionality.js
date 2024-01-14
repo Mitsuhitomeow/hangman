@@ -4,8 +4,10 @@ import {
 } from '../components/gameInfoSection/questionsForEach';
 import createModal from '../components/modal';
 import { keyboard } from '../database.json';
+import mp3 from '/musickPressKey.mp3';
 
 export default function initGameFunctionality() {
+  const audio = new Audio(mp3)
   const answerArray = [...randomAnswer];
   const hiddenAnswerArray = [...hiddenAnswer];
   let countGuesses = 6;
@@ -33,10 +35,12 @@ export default function initGameFunctionality() {
       const key = element;
 
       if (event.code === key.code) {
+
         button.forEach((elem) => {
           const click = elem;
           if (key.key === click.textContent) {
             click.disabled = true;
+            audio.play()
           }
           if (key.key === click.textContent && !answerArray.includes(key.key)) {
             countGuesses -= 1;

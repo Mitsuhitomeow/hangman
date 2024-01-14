@@ -1,12 +1,16 @@
 import styles from './keyboard.module.scss';
+import mp3 from '/musickPressKey.mp3';
 
 export default function createKey(data, keyboard) {
   data.forEach((key) => {
     const button = document.createElement('button');
+    const audio = new Audio(mp3)
+
     button.textContent = `${key.key}`;
 
     button.addEventListener('click', () => {
       button.disabled = true;
+      audio.play()
     });
 
     button.className = `${styles.main__keyboard_key}`;
