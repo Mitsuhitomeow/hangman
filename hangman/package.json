@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "node node_modules/eslint/bin/eslint.js ./src",
-    "lint:fix": "node node_modules/eslint/bin/eslint.js ./src --fix"
+    "lint:fix": "node node_modules/eslint/bin/eslint.js ./src --fix",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "husky": {
     "hooks": {
@@ -26,6 +27,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.2",
+    "gh-pages": "^6.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "3.1.1",
