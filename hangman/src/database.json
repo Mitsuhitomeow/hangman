@@ -65,10 +65,6 @@
       "answer": "Google"
     },
     {
-      "question": "A widely used cloud computing platform.",
-      "answer": "Amazon Web Services (AWS)"
-    },
-    {
       "question": "The programming language known for its simplicity and readability.",
       "answer": "Python"
     },
@@ -91,10 +87,6 @@
     {
       "question": "A widely used relational database management system.",
       "answer": "MySQL"
-    },
-    {
-      "question": "The founder of Microsoft.",
-      "answer": "Bill Gates"
     },
     {
       "question": "A widely used programming language for building mobile applications.",
