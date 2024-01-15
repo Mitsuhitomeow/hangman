@@ -27,6 +27,15 @@
 
   text-align: center;
   transform: translate(-50%, -50%);
+  transition: width ease .3s;
+
+  @media screen and (max-width:760px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width:500px) {
+    width: 80%;
+  }
 }
 
 .modal__content_title {
