@@ -1,48 +1,152 @@
 {
   "answerQuastion": [
     {
-      "question": "who says meow",
+      "question": "Who says meow?",
       "answer": "cat"
     },
     {
-      "question": "An element with the symbol 'O'",
+      "question": "An element with the symbol 'O'.",
       "answer": "Oxygen"
     },
     {
-      "question": "A famous scientist known for the theory of relativity",
+      "question": "A famous scientist known for the theory of relativity.",
       "answer": "Einstein"
     },
     {
-      "question": "The capital of Japan",
+      "question": "The capital of Japan.",
       "answer": "Tokyo"
     },
     {
-      "question": "The largest mammal in the world",
+      "question": "The largest mammal in the world.",
       "answer": "Bluewhale"
     },
     {
-      "question": "The currency of Germany",
+      "question": "The currency of Germany.",
       "answer": "Euro"
     },
     {
-      "question": "A Shakespeare play about tragedy and betrayal",
+      "question": "A Shakespeare play about tragedy and betrayal.",
       "answer": "Othello"
     },
     {
-      "question": "A programming language named after a snake",
+      "question": "A programming language named after a snake.",
       "answer": "Python"
     },
     {
-      "question": "The longest river in the world",
+      "question": "The longest river in the world.",
       "answer": "Nile"
     },
     {
-      "question": "A famous painting by Leonardo da Vinci with a mysterious smile",
+      "question": "A famous painting by Leonardo da Vinci with a mysterious smile.",
       "answer": "MonaLisa"
     },
     {
-      "question": "A mythical bird that rises from its ashes",
+      "question": "A mythical bird that rises from its ashes.",
       "answer": "Phoenix"
+    },
+    {
+      "question": "A programming language commonly used for web development.",
+      "answer": "JavaScript"
+    },
+    {
+      "question": "An operating system developed by Apple Inc.",
+      "answer": "macOS"
+    },
+    {
+      "question": "The largest social media platform.",
+      "answer": "Facebook"
+    },
+    {
+      "question": "A popular version control system used in software development.",
+      "answer": "Git"
+    },
+    {
+      "question": "The company known for its search engine.",
+      "answer": "Google"
+    },
+    {
+      "question": "A widely used cloud computing platform.",
+      "answer": "Amazon Web Services (AWS)"
+    },
+    {
+      "question": "The programming language known for its simplicity and readability.",
+      "answer": "Python"
+    },
+    {
+      "question": "A popular web browser developed by Google.",
+      "answer": "Chrome"
+    },
+    {
+      "question": "The process of finding and fixing errors in a computer program.",
+      "answer": "Debugging"
+    },
+    {
+      "question": "A widely used markup language for creating web pages.",
+      "answer": "HTML"
+    },
+    {
+      "question": "An acronym for a widely used data interchange format.",
+      "answer": "JSON"
+    },
+    {
+      "question": "A widely used relational database management system.",
+      "answer": "MySQL"
+    },
+    {
+      "question": "The founder of Microsoft.",
+      "answer": "Bill Gates"
+    },
+    {
+      "question": "A widely used programming language for building mobile applications.",
+      "answer": "Java"
+    },
+    {
+      "question": "The term for a software program designed to cause damage to a computer system.",
+      "answer": "Malware"
+    },
+    {
+      "question": "An open-source operating system based on the Linux kernel.",
+      "answer": "Ubuntu"
+    },
+    {
+      "question": "A popular version of Unix used in web hosting.",
+      "answer": "Linux"
+    },
+    {
+      "question": "The process of converting human-readable code into machine code.",
+      "answer": "Compilation"
+    },
+    {
+      "question": "The organization that develops the Java programming language.",
+      "answer": "Oracle"
+    },
+    {
+      "question": "A widely used content management system for building websites.",
+      "answer": "WordPress"
+    },
+    {
+      "question": "The programming language known for its use in artificial intelligence applications.",
+      "answer": "Python"
+    },
+    {
+      "question": "The process of protecting information from unauthorized access.",
+      "answer": "Security"
+    },
+    {
+      "question": "An agile project management framework.",
+      "answer": "Scrum"
+    },
+    {
+      "question": "The programming language designed for creating dynamic web pages.",
+      "answer": "PHP"
+    },
+    {
+      "question": "The technology that allows data transmission over short distances.",
+      "answer": "Bluetooth"
+    },
+    {
+      "question": "A widely used integrated development environment (IDE) for Java.",
+      "answer": "Eclipse"
     }
   ],
   "keyboard": [
