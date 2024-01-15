@@ -22,15 +22,31 @@ export default function initGameFunctionality() {
 
   guesses.textContent = `guesses: ${countGuesses} / 6`;
   image.setAttribute('src', `./6.svg`);
+
   answer.textContent = hiddenAnswerArray.join('');
 
   const KEYS = JSON.parse(JSON.stringify(keyboard));
   let gameInProgress = true;
 
+  // функция проверки результатов игры для вызова модалки "победа" или "поражение"
+  function checkGameResult() {
+    if (countGuesses === 0) {
+      createModal('You Lost!', randomAnswer);
+      countGuesses = 6;
+      gameInProgress = false;
+    }
+
+    if (JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)) {
+      createModal('You WIN!', randomAnswer);
+      gameInProgress = false;
+    }
+  }
+
   document.addEventListener('keydown', (event) => {
     if (!gameInProgress) {
       return;
     }
+
     KEYS.forEach((element) => {
       const key = element;
 
@@ -62,18 +78,9 @@ export default function initGameFunctionality() {
           }
         });
       }
-
-      if (countGuesses === 0) {
-        createModal('You Lost!', randomAnswer);
-        countGuesses = 6;
-        gameInProgress = false;
-      }
-
-      if (JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)) {
-        createModal('You WIN!', randomAnswer);
-        gameInProgress = false;
-      }
     });
+
+    checkGameResult();
   });
 
   button.forEach((key) => {
@@ -93,16 +100,7 @@ export default function initGameFunctionality() {
         image.setAttribute('src', `./${countGuesses}.svg`);
       }
 
-      if (JSON.stringify(answerArray) === JSON.stringify(hiddenAnswerArray)) {
-        createModal('You WIN!', randomAnswer);
-        countGuesses = 6;
-        gameInProgress = false;
-      }
-
-      if (countGuesses === 0) {
-        createModal('You Lost!', randomAnswer);
-        gameInProgress = false;
-      }
+      checkGameResult();
     });
   });
 }

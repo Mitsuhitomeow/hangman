@@ -29,8 +29,9 @@ export default function createModal(isWon, word) {
   document.body.appendChild(modal);
 
   BTN_RESTART.addEventListener('click', () => {
-    modal.style.display = 'none';
-
+    // удаляем модалку при клике
+    modal.remove();
+    // пересоздаем компаненты
     initGame();
   });
 
