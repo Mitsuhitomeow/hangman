@@ -1,4 +1,7 @@
-import initGame from '../../utils/startNewGame';
+import {
+  clickButtonToRestart,
+  pressEnterToRestart,
+} from '../../utils/clickPressSoundModal';
 import isWinnerSound from '../../utils/isWinSound';
 import styles from './modal.module.scss';
 
@@ -28,12 +31,9 @@ export default function createModal(isWon, word) {
   modal.appendChild(modalContent);
   document.body.appendChild(modal);
 
-  BTN_RESTART.addEventListener('click', () => {
-    // удаляем модалку при клике
-    modal.remove();
-    // пересоздаем компаненты
-    initGame();
-  });
+  // логика кнопок для рестарта
+  document.addEventListener('keydown', pressEnterToRestart);
+  BTN_RESTART.addEventListener('click', clickButtonToRestart);
 
   isWinnerSound(isWon);
 }
