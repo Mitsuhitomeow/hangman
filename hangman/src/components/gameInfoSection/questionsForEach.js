@@ -15,6 +15,8 @@ export default function createQuestion(infoSection) {
     .join('');
   randomQuestion = answerQuastion[random].question;
 
+  console.log('Answer:', randomAnswer);
+
   const answerElement = document.createElement('span');
   const questionElement = document.createElement('p');
   const guessesElement = document.createElement('p');
