@@ -21,6 +21,10 @@ $text-dark: #2C4A52;
   @media screen and (max-width:580px) {
     font-size: 40px;
   }
+
+  @media screen and (max-width:500px) {
+    font-size: 25px;
+  }
 }
 
 .main__info_question {
