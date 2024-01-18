@@ -2,12 +2,13 @@ import styles from './keyboard.module.scss';
 import clickMp3 from '/musicMouseClick.mp3';
 import pressMp3 from '/musickPressKey.mp3';
 
+const audioClick = new Audio(clickMp3);
+const audioPress = new Audio(pressMp3);
+
 export default function createKey(data, keyboard) {
   data.forEach((key) => {
     const button = document.createElement('button');
     const sound = document.querySelector(`[class*=header__img_sound]`);
-    const audioClick = new Audio(clickMp3);
-    const audioPress = new Audio(pressMp3);
 
     button.textContent = `${key.key}`;
 
