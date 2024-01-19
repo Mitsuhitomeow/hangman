@@ -7,6 +7,6 @@ export default {
   server: {
     host: true,
   },
-  base: '/mitsuhitomeow-JSFE2023Q4/',
+  base: '/hangman/',
   plugins: [Inspect()],
 };
